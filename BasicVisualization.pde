@@ -14,7 +14,7 @@ float previousPulse = 555;
 
 void setup() {
   fullScreen();
-  noise = new Graph("Noise", width / 2 - 500, 100, 1000, 150, 400, -30, 170);
+  noise = new Graph("Noise", width / 2 - 500, 100, 1000, 150, 200, 135, 145);
   co2 = new Graph("CO2", width / 2 - 500, 250, 1000, 150, 200, 300, 600);
   ecg = new Graph("ECG", width / 2 - 500, 400, 1000, 150, 200, -10, 1034);
   heart = new Heart("BPM", width / 2 - 100, 570, 200, 200);
@@ -51,8 +51,7 @@ void draw() {
   env.setValue(columns[3], columns[4]);
   env.draw();
   heart.draw();
-  noise.addValue(columns[5] * random(1));
-  noise.addValue(columns[5] * random(1));
+  noise.addValue(columns[5]);
   noise.draw();
   co2.addValue(columns[1]);
   co2.draw();
