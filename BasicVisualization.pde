@@ -4,7 +4,7 @@ Graph noise;
 Heart heart;
 Environment env;
 float coord = 0;
-String dataPath = "/Users/hellobodoradri/Documents/Arduino/output.csv";
+String dataPath = "output.csv";
 String[] lines;
 int current_line;
 int realStartTime;
